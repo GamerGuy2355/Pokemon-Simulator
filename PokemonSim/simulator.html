@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulator — Pokémon Card Pack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="simulator.html">🎴 Simulator</a>
+    <a href="rarities.html">⭐ Rarity List</a>
+    <a href="collection.html">📘 My Collection</a>
+  </nav>
+
+  <main class="simulator">
+    <h1>Pokémon Card Pack Simulator</h1>
+
+    <div class="money-counter">
+      <span class="money-icon">💰</span>
+      <span id="money" class="money-text">$1000</span>
+    </div>
+
+    <div class="shop">
+      <button onclick="buyPack('Base Set', 100)">Base Set — $100</button>
+      <button onclick="buyPack('Evolving Skies', 150)">Evolving Skies — $150</button>
+      <button onclick="buyPack('Scarlet & Violet', 120)">Scarlet & Violet — $120</button>
+    </div>
+
+    <div id="packOpening">
+      <img class="pack" id="packImage" src="" alt="Pack Image" />
+      <p id="packText">Opening pack...</p>
+    </div>
+
+    <div id="results"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

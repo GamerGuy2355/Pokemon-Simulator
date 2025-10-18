@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Collection — Pokémon Card Pack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="simulator.html">🎴 Simulator</a>
+    <a href="rarities.html">⭐ Rarity List</a>
+    <a href="collection.html">📘 My Collection</a>
+  </nav>
+
+  <section class="collection">
+    <h1>My Card Collection</h1>
+    <div id="collectionContainer" class="collection-grid"></div>
+    <button class="btn-secondary" onclick="resetProgress()">Reset Progress</button>
+  </section>
+
+  <script src="script.js"></script>
+  <script>loadCollection();</script>
+</body>
+</html>
